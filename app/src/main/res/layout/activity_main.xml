@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+    <ScrollView
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="8dp"
+        android:background="#F1F1F1"
+        android:visibility="visible"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F1F1F1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                >
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/braground" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="360dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/search1"
+                    />
+
+                <Button
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="160dp"
+                    android:layout_marginTop="65dp"
+                    android:background="@drawable/file"
+                    android:drawableRight="@drawable/icon"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="Whare to?"
+                    android:textSize="7dp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:drawableTop="@drawable/hotel"
+                    android:padding="10dp"
+                    android:text="Hotels"
+
+
+                    />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:drawableTop="@drawable/home"
+                    android:padding="10dp"
+                    android:text="vaction rentals" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:drawableTop="@drawable/flight"
+                    android:padding="10dp"
+                    android:text="Button" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="3dp"
+                android:background="#F1F1F1"
+                android:orientation="horizontal"
+                android:weightSum="3"
+
+                >
+
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:drawableTop="@drawable/restaurant"
+                    android:padding="10dp"
+                    android:text="Button" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:drawableTop="@drawable/things"
+                    android:padding="10dp"
+                    android:text="Things to do" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:drawableTop="@drawable/more"
+                    android:padding="10dp"
+                    android:text="More" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="10dp"
+                android:background="#FFFFFF"
+                android:paddingTop="40dp"
+                android:text="Top destinations"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_marginBottom="90dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/name1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="250dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/image1" />
+
+                    <ImageView
+                        android:id="@+id/name2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="250dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/image2" />
+
+                    <ImageView
+                        android:id="@+id/name3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="250dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/image3" />
+
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/trips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/name"
+            android:orientation="vertical"
+
+
+            >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#F1F1F1"
+                android:gravity="center_horizontal"
+                android:text="I want to build myself as a beloved servant of Allah and honest Muslim."
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical"
+
+                >
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animationView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/imagew"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/namaj" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animationVie"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/aaasss"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/quran"
+
+                    />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animationVi"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/number2"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/zakat"
+
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#B3009688"
+                    android:gravity="start"
+                    android:text="আমি মুসলিম!ভালবাসি আল্লাহকে,মহিমান্বিত কোরআনকে এবং প্রিয় নবিজিকে। তারই সাথে থাকতে চাই জান্নাতুল ফিরদাউসে!আমার জীবনের প্রদান উদ্দেশ্য হচ্ছে কঠোর পরিশ্রম করে নিজেকে আদর্শ মুসলিম হিসেবে গড়ে তোলা। ইনশাআল্লাহ আমি একজন ভাল এপস ডেভেলপার হয়ে দ্বীনের খেদমত করতে চাই এবং হালাল রিজিক উপার্জন করতে চাই।"
+                    android:textColor="#000000"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <ScrollView
+        android:id="@+id/noti"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                >
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animationVi"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/notifacation"
+                    />
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="320dp"
+                    android:layout_height="70dp"
+                    android:text="Notifications"
+                    android:textSize="50dp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="New"
+                android:textSize="35dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/f1"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:textSize="16dp"
+                    android:textStyle="italic"
+                    android:background="#F5B0E6FF"
+                    android:text="With its seventier pagoda and thousands of bronze statues, George Town Kek Lok Si Temple is one of the most beautiful Buddhist temples in Malaysiaif not the entire world."
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/f2"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:textSize="16dp"
+                    android:textStyle="italic"
+                    android:text="The Cameron Highlands in Pahang host the largest tea plantations in Malaysia Its a place of fuzzy green hills rolling into the distance, where you can explore butterfly gardens and strawberry farms."
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/f3"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:textSize="16dp"
+                    android:textStyle="italic"
+                    android:text="Tun Sakaran Marine Park is a nearly 86,500 acre marine park situated off the east coast of Sabah, Borneo, known for its vibrant dive sites Look for giant clams, clown fish, and stingrays."
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/f4"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:textSize="16dp"
+                    android:textStyle="italic"
+                    android:text="The town of Kota Bharu, located on the east coast of peninsular Malaysia, is home to many museums, mosques, and the famous Siti Khadijah Market, where local women gather to sell produce and snacks, like noodle soup and kuih a type of Malaysian cookie."
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/f5"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:textSize="16dp"
+                    android:textStyle="italic"
+                    android:text="Located in Sabah on northern Borneo, Kinabalu Park is defined by the 13,435 foottall Mount Kinabalu, the highest mountain in the country  The park became a UNESCO site in 2000 due to its wide range of habitats and plant life."
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/f6"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:textSize="16dp"
+                    android:textStyle="italic"
+                    android:text="A jumping off point for diving trips to surrounding islands, the beautiful town of Semporna offers a nice glimpse of local life  Many people here live in water villages, large groups of houses built on stilts that can be viewed by boat."
+                    />
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/f6"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:textSize="16dp"
+                    android:textStyle="italic"
+                    android:text="The critically endangered Malayan tigers there are about 250 left on the planet can be found in southern and central areas of the Malay Peninsula, in areas like Taman Negara National Park and the Gunung Basor Forest Reserve in the Jeli District."
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="100dp"
+                >
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/f7"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:textSize="16dp"
+                    android:textStyle="italic"
+                    android:text="Gunung Mulu National Park has been a World Heritage site since 2000, with the organization dubbing it the most studied tropical karst area in the world.The extraordinary park feature thousands of plant species, millions of bats, and the largest known cave chamber in the world."
+                    />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <ScrollView
+        android:id="@+id/me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/copy"
+
+                />
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:gravity="center_horizontal"
+        >
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/home2"
+            android:text="Home"
+            android:textSize="10dp"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"
+            android:padding="29dp"
+
+
+
+            />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/trip"
+            android:text="My trips"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"
+            android:padding="29dp"
+            android:textSize="10dp"
+
+
+
+
+            />
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:drawableTop="@drawable/alarts"
+            android:text="alarts"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"
+            android:padding="29dp"
+            android:textSize="10dp"
+
+
+
+            />
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:drawableTop="@drawable/me"
+            android:text="Me"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"
+            android:padding="29dp"
+            android:textSize="10dp"
+
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
